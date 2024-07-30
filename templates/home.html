@@ -11,26 +11,27 @@
 
   </head>
   <body>
+    {% include 'nav.html' %}
     
     <div class="text-center"  class="container" class="custom-dark-grey" >
       
-      <h1 class="padding-bottom-8px" class="fw-bolder" >Shinchan</h1>
+      <h1 class="padding-bottom-10px" class="fw-bolder" >Shinchan</h1>
       
-      <img class="padding-bottom-8px" src="https://e76a99da-1963-4fb8-b2a4-75ddaa8d57a6-00-rj4rbkpsb76c.pike.replit.dev/static/fab-lentz-mRMQwK513hY-unsplash.jpg" height="300px" width="75%">
+      <img class="padding-bottom-10px" src="https://e76a99da-1963-4fb8-b2a4-75ddaa8d57a6-00-rj4rbkpsb76c.pike.replit.dev/static/lycs-architecture-U2BI3GMnSSE-unsplash.jpg" height="300px" width="60%">
       
-      <h2 class="padding-bottom-8px" >About Shinchan</h2>
-      
-      
-      <p class="padding-bottom-8px" class="lead">Shinachan's Career Portal is a centralized platform designed to connect top talent with rewarding opportunities. Our portal offers a streamlined job search experience, featuring a comprehensive database of positions, advanced search functionalities, and employer profiles. Candidates can easily upload resumes, apply for jobs, and track application progress. Shinachan is committed to fostering professional growth and development for both job seekers and employers.</p>
+      <h2 class="padding-bottom-10px" >About Shinchan</h2>
       
       
-      <h3 class="padding-bottom-8px" >Job Openings</h3>
+      <p class="padding-bottom-10px" class="lead">Shinachan's Career Portal is a centralized platform designed to connect top talent with rewarding opportunities. Our portal offers a streamlined job search experience, featuring a comprehensive database of positions, advanced search functionalities, and employer profiles. Candidates can easily upload resumes, apply for jobs, and track application progress. Shinachan is committed to fostering professional growth and development for both job seekers and employers.</p>
+      
+      
+      <h3 class="padding-bottom-10px" >Job Openings</h3>
       {% for job in jobs%}
         {% include 'job.html' %}
       {% endfor%}
       
-      <button class="padding-bottom-8px" class="btn btn-primary">Contact Us</button>
-      <p class="padding-bottom-8px">Copyright 2023,Shinchan</p>
+      <button class="padding-bottom-10px" class="btn btn-outline-primary">Contact Us</button>
+      <p class="padding-bottom-10px">Copyright 2023,Shinchan</p>
       
             
     </div>
